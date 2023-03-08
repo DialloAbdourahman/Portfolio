@@ -13,14 +13,17 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
         <RxCross1 className='icon' onClick={() => setShowSidebar(false)} />
       </p>
       <div className='links'>
-        <a href='#' onClick={() => setShowSidebar(false)}>
-          <span className='green'>01. </span>Projects
+        <a href='#about' onClick={() => setShowSidebar(false)}>
+          <span className='green'>01. </span>About Me
         </a>
-        <a href='#' onClick={() => setShowSidebar(false)}>
-          <span className='green'>02. </span>Contact
+        <a href='#project' onClick={() => setShowSidebar(false)}>
+          <span className='green'>02. </span>Projects
         </a>
-        <a href='#' onClick={() => setShowSidebar(false)}>
+        <a href='#experience' onClick={() => setShowSidebar(false)}>
           <span className='green'>03. </span>Experience
+        </a>
+        <a href='#contact' onClick={() => setShowSidebar(false)}>
+          <span className='green'>04. </span>Contact
         </a>
         <a href='#' className='resume' onClick={() => setShowSidebar(false)}>
           Resume
@@ -61,7 +64,7 @@ const Wrapper = styled.nav`
     color: var(--whiteColor);
     margin: 0 15px;
     font-size: 18px;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 20px;
     width: 100%;
   }
@@ -93,7 +96,7 @@ const Wrapper = styled.nav`
     display: block;
   }
 
-  @media (min-width: 750px) {
+  @media (min-width: 900px) {
     display: none;
   }
 `;

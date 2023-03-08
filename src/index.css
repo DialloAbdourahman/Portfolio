@@ -5,6 +5,8 @@
   --paleWhiteColor: #8892b0;
   --light-navy: #112240;
   --hover: #233554;
+  --lightest-navy: #233554;
+  --white: #e6f1ff;
 }
 
 * {
@@ -13,12 +15,30 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--backgroundColor);
+  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.sub-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

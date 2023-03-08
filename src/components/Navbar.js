@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Navbar = ({ setShowSidebar }) => {
   return (
-    <Wrapper>
+    <Wrapper id='navbar'>
       <div className='container'>
         <div className='logo'>
           <h2>D</h2>
@@ -14,14 +14,17 @@ const Navbar = ({ setShowSidebar }) => {
           />
         </div>
         <div className='links'>
-          <a href='#'>
-            <span className='green'>01. </span>Projects
+          <a href='#about'>
+            <span className='green'>01. </span>About Me
           </a>
-          <a href='#'>
-            <span className='green'>02. </span>Contact
+          <a href='#project'>
+            <span className='green'>02. </span>Projects
           </a>
-          <a href='#'>
+          <a href='#experience'>
             <span className='green'>03. </span>Experience
+          </a>
+          <a href='#contact'>
+            <span className='green'>04. </span>Contact
           </a>
           <a href='#' className='resume'>
             Resume
@@ -33,7 +36,7 @@ const Navbar = ({ setShowSidebar }) => {
 };
 
 const Wrapper = styled.article`
-  margin-top: 30px;
+  padding: 30px 0;
 
   .container {
     display: flex;
@@ -86,7 +89,7 @@ const Wrapper = styled.article`
     display: none;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     .logo {
       width: 100%;
     }
