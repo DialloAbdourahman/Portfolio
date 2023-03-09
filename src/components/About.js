@@ -20,7 +20,8 @@ const About = () => {
           </p>
           <p>
             Fast-forward to today, and I've had the privilege of studying
-            software engineering in the university which has led me to create
+            software engineering in the university and got a HND (Higher
+            National Diploma) and Bachelor's degree which has led me to create
             many project and do some interships. My main focus these days is
             building accessible, inclusive products and digital experiences at
             Upstatement for a variety of clients.
@@ -100,7 +101,7 @@ const Wrapper = styled.section`
 
   h1 {
     color: var(--whiteColor);
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 30px;
     font-size: 30px;
   }

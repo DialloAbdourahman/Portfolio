@@ -21,7 +21,7 @@ const Wrapper = styled.button`
   border-radius: 50%;
   border: none;
   z-index: 2000;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bolder;
 
   a {
@@ -30,6 +30,7 @@ const Wrapper = styled.button`
     align-items: center;
     justify-content: center;
     transition: transform 0.2s linear;
+    color: var(--backgroundColor);
   }
 
   a:active {

@@ -5,34 +5,45 @@ import { CiFolderOn } from 'react-icons/ci';
 const SingleProject = ({ name, description, technologies, links }) => {
   return (
     <Wrapper>
-      <div className='flex'>
-        <CiFolderOn className='icon' />
-        <div className='links'>
-          {links.map(({ icon, link }) => {
-            return (
-              <a href={link} target='_blank'>
-                {icon}
-              </a>
-            );
+      <a
+        href={links[1] ? links[1].link : links[0].link}
+        target='_blank'
+        className='contain'
+      >
+        <div className='flex'>
+          <CiFolderOn className='icon' />
+          <div className='links'>
+            {links.map(({ icon, link }) => {
+              return (
+                <a href={link} target='_blank'>
+                  {icon}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+        <h3 className='name'>{name}</h3>
+        <p className='description'>{description}</p>
+        <div className='technologies'>
+          {technologies.map((techno, index) => {
+            return <span key={index}>{techno}</span>;
           })}
         </div>
-      </div>
-      <h3 className='name'>{name}</h3>
-      <p className='description'>{description}</p>
-      <div className='technologies'>
-        {technologies.map((techno, index) => {
-          return <span key={index}>{techno}</span>;
-        })}
-      </div>
+      </a>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.article`
-  background-color: var(--lightest-navy);
+  background-color: rgb(17, 34, 64);
   max-width: 312px;
   padding: 20px;
   border-radius: 5px;
+  transition: transform 0.2s ease-in;
+
+  &:hover {
+    transform: translateY(-3%);
+  }
 
   .icon {
     color: var(--greenColor);
@@ -58,6 +69,7 @@ const Wrapper = styled.article`
     margin-top: 20px;
     margin-bottom: 10px;
     color: var(--white);
+    transition: color 0.2s linear;
   }
 
   .description {
@@ -76,6 +88,23 @@ const Wrapper = styled.article`
   .technologies span {
     margin-right: 25px;
     margin-bottom: 5px;
+  }
+
+  &:hover .name {
+    color: var(--greenColor);
+  }
+
+  a:active,
+  a:focus {
+    color: transparent;
+  }
+
+  @media (max-width: 1000px) {
+    max-width: 350px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 100%;
   }
 `;
 

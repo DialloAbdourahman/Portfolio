@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SingleProject from './SingleProject';
-import { importantProjects } from '../utiles/projects';
+import { importantProjects, notSoImportantProjects } from '../utiles/projects';
 
 const Projects = () => {
   return (
@@ -9,8 +9,16 @@ const Projects = () => {
       <h1>
         <span className='green'>02.</span> Some projects I've built.
       </h1>
+      <h1 className='center up'>Large Projects</h1>
+
       <div className='projects-list'>
         {importantProjects.map((project, index) => {
+          return <SingleProject key={index} {...project} />;
+        })}
+      </div>
+      <h1 className='center'>Small Projects</h1>
+      <div className='projects-list'>
+        {notSoImportantProjects.map((project, index) => {
           return <SingleProject key={index} {...project} />;
         })}
       </div>
@@ -35,6 +43,26 @@ const Wrapper = styled.section`
 
   .green {
     color: var(--greenColor);
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .up {
+    margin-top: -60px;
+  }
+
+  @media (max-width: 1000px) {
+    .projects-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .projects-list {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 

@@ -19,13 +19,13 @@ const Hero = () => {
 };
 
 const Wrapper = styled.section`
-  margin-top: 100px;
   min-height: calc(100vh - 109px);
 
   .intro {
     color: var(--greenColor);
     font-weight: normal;
     margin-bottom: 20px;
+    margin-top: 50px;
   }
 
   .name {

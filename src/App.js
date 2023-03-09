@@ -5,6 +5,9 @@ import Sidebar from './components/Sidebar';
 import About from './components/About';
 import ScrollUpButton from './components/ScrollUpButton';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -25,7 +28,6 @@ function App() {
 
   useEffect(() => {
     const checkScroll = () => {
-      console.log(window.scrollY);
       if (window.scrollY > 110) {
         setShowScrollButton(true);
       } else {
@@ -45,6 +47,9 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Experience />
+      <Contact />
+      <Footer />
       {showScrollButton && <ScrollUpButton />}
     </>
   );
@@ -52,10 +57,10 @@ function App() {
 
 export default App;
 
-// find the real background color of each single project.
-// make the project container responsive.
-// give a hover effect to every single project i.e moves up a bit when we hover it.
-// try and see if it will be a good idea to change the a single project into a link instead.
-
+// enter accurate data concerning your experience and social media
+// add few animation in the hero section.
 // Fix your heroku apps using this link https://dashboard.heroku.com/apps/mighty-forest-46842/deploy/heroku-git
 // visite all the websites online and make sure that they are working correctly.
+// Create a resume and integrate it in  the portfolio website.
+
+// https://brittanychiang.com/#jobs
