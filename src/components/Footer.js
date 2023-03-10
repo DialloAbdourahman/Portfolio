@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper className='container'>
       Designed and Built by Diallo Abdourahman all Rights Reserved.
     </Wrapper>
   );
@@ -15,6 +15,7 @@ const Wrapper = styled.section`
   color: var(--paleWhiteColor);
   font-style: italic;
   font-size: 15px;
+  border-top: 2px solid var(--paleWhiteColor);
 `;
 
 export default Footer;

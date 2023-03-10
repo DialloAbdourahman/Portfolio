@@ -25,7 +25,12 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
         <a href='#contact' onClick={() => setShowSidebar(false)}>
           <span className='green'>04. </span>Contact
         </a>
-        <a href='#' className='resume' onClick={() => setShowSidebar(false)}>
+        <a
+          href='/docs/cv.pdf'
+          target={'_blank'}
+          className='resume'
+          onClick={() => setShowSidebar(false)}
+        >
           Resume
         </a>
       </div>

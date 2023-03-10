@@ -56,11 +56,3 @@ function App() {
 }
 
 export default App;
-
-// enter accurate data concerning your experience and social media
-// add few animation in the hero section.
-// Fix your heroku apps using this link https://dashboard.heroku.com/apps/mighty-forest-46842/deploy/heroku-git
-// visite all the websites online and make sure that they are working correctly.
-// Create a resume and integrate it in  the portfolio website.
-
-// https://brittanychiang.com/#jobs

@@ -4,34 +4,34 @@ import {
   AiOutlineLinkedin,
   AiOutlineFacebook,
   AiOutlineInstagram,
+  AiOutlineTwitter,
 } from 'react-icons/ai';
-import { BsWhatsapp } from 'react-icons/bs';
 
 const socialmedia = [
   {
     name: 'GitHub',
-    link: '#',
+    link: 'https://github.com/DialloAbdourahman',
     icon: <FiGithub />,
   },
   {
     name: 'Linkedin',
-    link: '#',
+    link: 'https://www.linkedin.com/in/abdourahman-diallo-a502421b4/',
     icon: <AiOutlineLinkedin />,
   },
   {
     name: 'FaceBook',
-    link: '#',
+    link: 'https://www.facebook.com/abdourahman.diallo.33046',
     icon: <AiOutlineFacebook />,
   },
   {
     name: 'Instagram',
-    link: '#',
+    link: 'https://www.instagram.com/dialliabdourahman78/',
     icon: <AiOutlineInstagram />,
   },
   {
-    name: 'WhatsApp',
-    link: '#',
-    icon: <BsWhatsapp />,
+    name: 'Twitter',
+    link: 'https://twitter.com/A_Diallo_bdou',
+    icon: <AiOutlineTwitter />,
   },
 ];
 

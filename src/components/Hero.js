@@ -13,31 +13,43 @@ const Hero = () => {
         application and occasionally <span className='green'>mobile </span>
         applications using up-to-date languages and technologies.
       </p>
-      <a href='#'>Check out my resume</a>
+      <a href='/docs/cv.pdf' target={'_blank'}>
+        Check out my resume
+      </a>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.section`
   min-height: calc(100vh - 109px);
+  overflow: hidden;
 
   .intro {
     color: var(--greenColor);
     font-weight: normal;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
+    animation-name: leftToRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
   }
 
   .name {
     color: var(--whiteColor);
     margin-bottom: 20px;
     font-size: 70px;
+    animation-name: rightToLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
   }
 
   .sub-intro {
     color: var(--paleWhiteColor);
     margin-bottom: 20px;
     font-size: 70px;
+    animation-name: leftToRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
   }
 
   .description {
@@ -45,6 +57,9 @@ const Wrapper = styled.section`
     width: 50%;
     line-height: 25px;
     margin-bottom: 50px;
+    animation-name: rightToLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
   }
 
   a {
@@ -107,6 +122,24 @@ const Wrapper = styled.section`
     }
     .sub-intro {
       font-size: 30px;
+    }
+  }
+
+  @keyframes leftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 `;

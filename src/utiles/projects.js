@@ -58,10 +58,10 @@ const importantProjects = [
         icon: <FiGithub />,
         link: 'https://github.com/DialloAbdourahman/chat_app',
       },
-      {
-        icon: <BsBrowserChrome />,
-        link: 'https://diallo-chat-app.herokuapp.com/',
-      },
+      // {
+      //   icon: <BsBrowserChrome />,
+      //   link: 'https://diallo-chat-app.herokuapp.com/',
+      // },
     ],
   },
   {
@@ -153,10 +153,10 @@ const notSoImportantProjects = [
         icon: <FiGithub />,
         link: 'https://github.com/DialloAbdourahman/node.js-weather-app',
       },
-      {
-        icon: <BsBrowserChrome />,
-        link: 'https://mighty-forest-46842.herokuapp.com/',
-      },
+      // {
+      //   icon: <BsBrowserChrome />,
+      //   link: 'https://mighty-forest-46842.herokuapp.com/',
+      // },
     ],
   },
 ];

@@ -24,7 +24,7 @@ const Contact = () => {
       <div className='links'>
         {socialmedia.map((media, index) => {
           return (
-            <a key={index} href={media.link} title={media.name}>
+            <a key={index} href={media.link} title={media.name} target='_blank'>
               {media.icon}
             </a>
           );

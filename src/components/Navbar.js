@@ -26,7 +26,7 @@ const Navbar = ({ setShowSidebar }) => {
           <a href='#contact'>
             <span className='green'>04. </span>Contact
           </a>
-          <a href='#' className='resume'>
+          <a href='/docs/cv.pdf' className='resume' target='_blank'>
             Resume
           </a>
         </div>
