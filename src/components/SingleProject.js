@@ -95,6 +95,10 @@ const Wrapper = styled.article`
     color: var(--greenColor);
   }
 
+  a {
+    text-decoration: none;
+  }
+
   a:active,
   a:focus {
     color: transparent;
