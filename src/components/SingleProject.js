@@ -9,13 +9,14 @@ const SingleProject = ({ name, description, technologies, links }) => {
         href={links[1] ? links[1].link : links[0].link}
         target='_blank'
         className='contain'
+        rel='noopener noreferrer'
       >
         <div className='flex'>
           <CiFolderOn className='icon' />
           <div className='links'>
             {links.map(({ icon, link }) => {
               return (
-                <a href={link} target='_blank'>
+                <a href={link} target='_blank' rel='noopener noreferrer'>
                   {icon}
                 </a>
               );

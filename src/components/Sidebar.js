@@ -30,6 +30,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
           target={'_blank'}
           className='resume'
           onClick={() => setShowSidebar(false)}
+          rel='noopener noreferrer'
         >
           Resume
         </a>

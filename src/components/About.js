@@ -72,7 +72,7 @@ const About = () => {
         <div className='right'>
           <img
             src='/images/profile.jpg'
-            alt='My Profile Picture'
+            alt='jdsdfasdfasdfsdfasdfsdasdf'
             className='profile'
           />
         </div>

@@ -13,7 +13,7 @@ const Hero = () => {
         application and occasionally <span className='green'>mobile </span>
         applications using up-to-date languages and technologies.
       </p>
-      <a href='/docs/cv.pdf' target={'_blank'}>
+      <a href='/docs/cv.pdf' target={'_blank'} rel='noopener noreferrer'>
         Check out my resume
       </a>
     </Wrapper>
