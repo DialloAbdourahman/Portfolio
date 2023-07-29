@@ -60,6 +60,7 @@ const Wrapper = styled.section`
     margin-right: 30px;
     display: flex;
     flex-direction: column;
+    width: 30%;
   }
 
   .left button {

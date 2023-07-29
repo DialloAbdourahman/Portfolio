@@ -4,6 +4,67 @@ import { BsBrowserChrome } from 'react-icons/bs';
 
 const importantProjects = [
   {
+    name: 'Assoh Backend API',
+    description:
+      'Assoh is application that allows people to sell their products to customers without having to create a full e-commerce website. This application is made for Aficans and hence uses Africans currencies and marketing strategies. It is still under development.',
+    technologies: [
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'Socket.io',
+      'TypeScript',
+      'Prisma.js',
+    ],
+    links: [
+      {
+        icon: <FiGithub />,
+        link: 'https://github.com/DialloAbdourahman/Assoh-Backend',
+      },
+    ],
+  },
+  {
+    name: 'Assoh Frontend',
+    description:
+      'Assoh is application that allows people to sell their products to customers without having to create a full e-commerce website. This application is made for Aficans and hence uses Africans currencies and marketing strategies. It is still under development.',
+    technologies: ['React.js', 'Socket.io', 'Axios.js', 'Styled Components'],
+    links: [
+      {
+        icon: <FiGithub />,
+        link: 'https://github.com/DialloAbdourahman/Assoh-Frontend',
+      },
+    ],
+  },
+  {
+    name: 'Pharmacy App Frontend',
+    description:
+      'The pharmacy application is an application that allows pharmacies to manage all their inventory and at the same time, make all their products available online so that customers can search through them and even order through the application. The pharmacy application uses geolocalization to help customers find the closest pharmacy having the medication they are looking for.',
+    technologies: ['React.js', 'Axios.js', 'Styled Components'],
+    links: [
+      {
+        icon: <FiGithub />,
+        link: 'https://github.com/nelsonludo/pharmacyAppFrontEnd',
+      },
+    ],
+  },
+  {
+    name: 'Pharmacy App Backend API',
+    description:
+      'The pharmacy application is an application that allows pharmacies to manage all their inventory and at the same time, make all their products available online so that customers can search through them and even order through the application. The pharmacy application uses geolocalization to help customers find the closest pharmacy having the medication they are looking for.',
+    technologies: [
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'TypeScript',
+      'Prisma.js',
+    ],
+    links: [
+      {
+        icon: <FiGithub />,
+        link: 'https://github.com/DialloAbdourahman/PharmacyBackend',
+      },
+    ],
+  },
+  {
     name: 'Comfy Sloth',
     description:
       'My first e-commerce website which allows users to order products. It has all modern e-commerce websites functionalites such as login, add to cart, payment with stripe api, etc.',
@@ -62,37 +123,6 @@ const importantProjects = [
       //   icon: <BsBrowserChrome />,
       //   link: 'https://diallo-chat-app.herokuapp.com/',
       // },
-    ],
-  },
-  {
-    name: 'Assoh API',
-    description:
-      'Assoh is application that allows people to sell their products to customers without having to create a full e-commerce website. This application is made for Aficans and hence uses Africans currencies and marketing strategies. It is still under development.',
-    technologies: [
-      'Node.js',
-      'Express',
-      'PostgreSQL',
-      'Socket.io',
-      'TypeScript',
-      'Prisma.js',
-    ],
-    links: [
-      {
-        icon: <FiGithub />,
-        link: 'https://github.com/DialloAbdourahman/Assoh-Backend',
-      },
-    ],
-  },
-  {
-    name: 'Assoh Frontend',
-    description:
-      'Assoh is application that allows people to sell their products to customers without having to create a full e-commerce website. This application is made for Aficans and hence uses Africans currencies and marketing strategies. It is still under development.',
-    technologies: ['React.js', 'Socket.io', 'Axios.js', 'Styled Components'],
-    links: [
-      {
-        icon: <FiGithub />,
-        link: 'https://github.com/DialloAbdourahman/Assoh-Frontend',
-      },
     ],
   },
   {

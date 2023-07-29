@@ -17,6 +17,14 @@ const experiences = [
       'Helped in the maintenance of highly performant servers that connected the whole Ministry.',
     ],
   },
+  {
+    company: 'CAMSOFT GROUP LTD',
+    title: 'Software Developer',
+    date: 'March 2023 - May 2021',
+    activities: [
+      'Designed and developed an E-commerce application called Assoh.',
+    ],
+  },
 ];
 
 export { experiences };
