@@ -11,20 +11,22 @@ const SingleProject = ({ name, description, technologies, links }) => {
         className='contain'
         rel='noopener noreferrer'
       >
-        <div className='flex'>
-          <CiFolderOn className='icon' />
-          <div className='links'>
-            {links.map(({ icon, link }) => {
-              return (
-                <a href={link} target='_blank' rel='noopener noreferrer'>
-                  {icon}
-                </a>
-              );
-            })}
+        <div className='top'>
+          <div className='flex'>
+            <CiFolderOn className='icon' />
+            <div className='links'>
+              {links.map(({ icon, link }) => {
+                return (
+                  <a href={link} target='_blank' rel='noopener noreferrer'>
+                    {icon}
+                  </a>
+                );
+              })}
+            </div>
           </div>
+          <h3 className='name'>{name}</h3>
+          <p className='description'>{description}</p>
         </div>
-        <h3 className='name'>{name}</h3>
-        <p className='description'>{description}</p>
         <div className='technologies'>
           {technologies.map((techno, index) => {
             return <span key={index}>{techno}</span>;
@@ -44,6 +46,19 @@ const Wrapper = styled.article`
 
   &:hover {
     transform: translateY(-3%);
+  }
+
+  .contain {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .top {
+    height: 80%;
+    display: block;
   }
 
   .icon {
@@ -84,6 +99,7 @@ const Wrapper = styled.article`
     font-style: italic;
     display: flex;
     flex-wrap: wrap;
+    height: 15%;
   }
 
   .technologies span {
