@@ -4,6 +4,52 @@ import { BsBrowserChrome } from 'react-icons/bs';
 
 const importantProjects = [
   {
+    name: 'Food Ordering Application Frontend',
+    description:
+      'This application allows users to order food online and get delivered. It also allows restaurant owners to create their restaurants along side their menus so that customers can search and order food in just few clicks.',
+    technologies: [
+      'React.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'UseQuery',
+      'Render',
+      'Vite',
+    ],
+    links: [
+      {
+        icon: <FiGithub />,
+        link: 'https://github.com/DialloAbdourahman/food_delivery_backend',
+      },
+      {
+        icon: <BsBrowserChrome />,
+        link: 'https://food-delivery-backend-2fjr.onrender.com/health',
+      },
+    ],
+  },
+  {
+    name: 'Food Ordering Application Backend API',
+    description:
+      'This application allows users to order food online and get delivered. It also allows restaurant owners to create their restaurants along side their menus so that customers can search and order food in just few clicks.',
+    technologies: [
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'TypeScript',
+      'Mongoose',
+      'Render',
+    ],
+    links: [
+      {
+        icon: <FiGithub />,
+        link: 'https://github.com/DialloAbdourahman/food_delivery_backend',
+      },
+      {
+        icon: <BsBrowserChrome />,
+        link: 'https://food-delivery-backend-2fjr.onrender.com/health',
+      },
+    ],
+  },
+  {
     name: 'Assoh Backend API',
     description:
       'Assoh is application that allows people to sell their products to customers without having to create a full e-commerce website. This application is made for Aficans and hence uses Africans currencies and marketing strategies. It is still under development.',
@@ -22,30 +68,30 @@ const importantProjects = [
       },
     ],
   },
-  {
-    name: 'Assoh Frontend',
-    description:
-      'Assoh is application that allows people to sell their products to customers without having to create a full e-commerce website. This application is made for Aficans and hence uses Africans currencies and marketing strategies. It is still under development.',
-    technologies: ['React.js', 'Socket.io', 'Axios.js', 'Styled Components'],
-    links: [
-      {
-        icon: <FiGithub />,
-        link: 'https://github.com/DialloAbdourahman/Assoh-Frontend',
-      },
-    ],
-  },
-  {
-    name: 'Pharmacy App Frontend',
-    description:
-      'The pharmacy application is an application that allows pharmacies to manage all their inventory and at the same time, make all their products available online so that customers can search through them and even order through the application. The pharmacy application uses geolocalization to help customers find the closest pharmacy having the medication they are looking for.',
-    technologies: ['React.js', 'Axios.js', 'Styled Components'],
-    links: [
-      {
-        icon: <FiGithub />,
-        link: 'https://github.com/nelsonludo/pharmacyAppFrontEnd',
-      },
-    ],
-  },
+  // {
+  //   name: 'Assoh Frontend',
+  //   description:
+  //     'Assoh is application that allows people to sell their products to customers without having to create a full e-commerce website. This application is made for Aficans and hence uses Africans currencies and marketing strategies. It is still under development.',
+  //   technologies: ['React.js', 'Socket.io', 'Axios.js', 'Styled Components'],
+  //   links: [
+  //     {
+  //       icon: <FiGithub />,
+  //       link: 'https://github.com/DialloAbdourahman/Assoh-Frontend',
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: 'Pharmacy App Frontend',
+  //   description:
+  //     'The pharmacy application is an application that allows pharmacies to manage all their inventory and at the same time, make all their products available online so that customers can search through them and even order through the application. The pharmacy application uses geolocalization to help customers find the closest pharmacy having the medication they are looking for.',
+  //   technologies: ['React.js', 'Axios.js', 'Styled Components'],
+  //   links: [
+  //     {
+  //       icon: <FiGithub />,
+  //       link: 'https://github.com/nelsonludo/pharmacyAppFrontEnd',
+  //     },
+  //   ],
+  // },
   {
     name: 'Pharmacy App Backend API',
     description:
