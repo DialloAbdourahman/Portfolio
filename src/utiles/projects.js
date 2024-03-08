@@ -18,11 +18,11 @@ const importantProjects = [
     links: [
       {
         icon: <FiGithub />,
-        link: 'https://github.com/DialloAbdourahman/food_delivery_backend',
+        link: 'https://github.com/DialloAbdourahman/food_delivery_frontend',
       },
       {
         icon: <BsBrowserChrome />,
-        link: 'https://food-delivery-backend-2fjr.onrender.com/health',
+        link: 'https://food-delivery-frontend-29s4.onrender.com',
       },
     ],
   },
