@@ -35,6 +35,7 @@ const importantProjects = [
       'Express',
       'MongoDB',
       'TypeScript',
+      'Stripe',
       'Mongoose',
       'Render',
     ],
