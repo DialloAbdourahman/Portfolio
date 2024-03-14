@@ -51,6 +51,18 @@ const importantProjects = [
     ],
   },
   {
+    name: 'Refresh Token Rotation and Reuse Detection Strategy',
+    description:
+      'This applications implements the "Refresh Token Rotation and Reuse Detection Strategy" which is a strategy that allows us to increase the security of our nodejs backend APIs. ',
+    technologies: ['Node.js', 'Express', 'MongoDB', 'jsonwebtoken', 'Mongoose'],
+    links: [
+      {
+        icon: <FiGithub />,
+        link: 'https://github.com/DialloAbdourahman/Refresh_Token_Rotation_And_Reuse_Detection_Strategy',
+      },
+    ],
+  },
+  {
     name: 'Assoh Backend API',
     description:
       'Assoh is application that allows people to sell their products to customers without having to create a full e-commerce website. This application is made for Aficans and hence uses Africans currencies and marketing strategies. It is still under development.',
